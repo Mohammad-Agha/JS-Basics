@@ -5,13 +5,13 @@ let blueDiv = document.querySelector(".blue");
 let paragraph = document.querySelector("#text");
 
 greenDiv.addEventListener("click", () => {
-  paragraph.className = "green";
+  paragraph.style = "color: green";
 });
 
 redDiv.addEventListener("click", () => {
-  paragraph.className = "red";
+  paragraph.style = "color: red";
 });
 
 blueDiv.addEventListener("click", () => {
-  paragraph.className = "blue";
+  paragraph.style = "color: blue";
 });
