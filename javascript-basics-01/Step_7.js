@@ -1,5 +1,7 @@
-let shoeSize = prompt("Enter your shoe size: ");
-let bDate = prompt("Enter your birth date: ");
+let shoeSize = document.querySelector("#shoe_size");
+let bDate = document.querySelector("#year");
+let button = document.querySelector("#validate");
+
 let multShoe = (shoeSize, bDate) => {
   let result = shoeSize * 2;
   result += 5;
@@ -8,4 +10,7 @@ let multShoe = (shoeSize, bDate) => {
   result += 1766;
   return result;
 };
-alert("Random result: " + multShoe(shoeSize, bDate));
+
+button.addEventListener("click", () => {
+  alert("Random result: " + multShoe(shoeSize.value, bDate.value));
+});
